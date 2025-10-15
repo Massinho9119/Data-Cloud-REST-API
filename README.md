@@ -3,23 +3,25 @@
 ### Obiettivo: interrogare Salesforce Data Cloud tramite API per ottenere info utili tramite metadati che possono essere utilizzate ai fini della reportistica
 
 ### Esempi: 
-# Report per monitorare aggiornamento stato DSO
-# Monitoraggio crediti? esplora API e cerca di capire 
-# vedi di capire se si può fare data quality-lineage-governance
+- Report per monitorare aggiornamento stato DSO
+- Monitoraggio crediti? esplora API e cerca di capire 
+- vedi di capire se si può fare data quality-lineage-governance
 
 ### implementazione interrogazione API 
-## tramite postman -> ok
-## in python -> wip
-# 01. creato meccanismo di generazione token basandosi su credenziali isolate in file ad hoc, viene fatta chiamata API e salvato JSON in cartella
-# to do -> aumentare numero di pagine da recuperare quando viene fatto il GET
-# 02. transcodifica del JSON in csv
-# selezione di alcune info ritenute utili ai fini della reportistica
-# 03. raffinare info
-# selezione colonne e gestione potenziali aggregazioni
-# 04. da fare
-# capire come esplorare Data Cloud passando da chiamate API
+- tramite postman -> ok
+- in python -> wip
+
+# Attività
+- step 1:creato meccanismo di generazione token basandosi su credenziali isolate in file ad hoc, viene fatta chiamata API e salvato JSON in cartella
+- to do -> aumentare numero di pagine da recuperare quando viene fatto il GET
+- step 2:transcodifica del JSON in csv
+- selezione di alcune info ritenute utili ai fini della reportistica
+- step 3: raffinare info
+- selezione colonne e gestione potenziali aggregazioni
+- step 4: da fare
+- capire come esplorare Data Cloud passando da chiamate API
 
 ### Layer
-# bronze: estrazione dati da API in formato JSON
-# silver: formattare e pulire json all'interno del silver layer
-# gold: prendere solo colonne che ci interessano e gestire aggregazioni 
+- bronze: estrazione dati da API in formato JSON
+- silver: formattare e pulire json all'interno del silver layer
+- gold: prendere solo colonne che ci interessano e gestire aggregazioni 
